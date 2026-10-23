@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: roboto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Todo-app {
+  width: 80%;
+  max-width: 900px;
+  background-color: rgb(221, 212, 212);
+  padding: 24px 20px;
+  border-radius: 10px;
+}
+
+.Todo-Header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 5px;
+  background: linear-gradient(90deg, #00c6ff, #7b2ff7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Todo-entry {
+  width: 100%;
+  display: flex;
+}
+
+.Todo-Input {
+  padding: 10px 30px;
+  flex: 0.8;
+  border-radius: 5px 0px 0px 5px;
+  outline: none;
+  border: 1px solid #e0e0e0;
+}
+
+.btn-save {
+  flex: 0.2;
+  border-radius: 0px 5px 5px 0px;
+  padding: 10px 30px;
+  border: 1px solid #e0e0e0;
+  background: linear-gradient(90deg, #00c6ff, #7b2ff7);
+}
+
+.Todo-Progress {
+  display: flex;
+  gap: 16px;
+}
+
+.done,
+.left {
+  background-color: white;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #304f91;
+  border-radius: 10px;
+}
+
+.done {
+  flex: 1;
+}
+
+.left {
+  flex: 1;
+}
+.Todo-Items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Todo {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.trash-icon {
+  color: red;
+  cursor: pointer;
+}
+
+.check-icon {
+  color: rgb(80, 180, 80);
+  cursor: pointer;
+}
+
+.edit-icon {
+  color: yellow;
+  cursor: pointer;
+}
+
+.completed p {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
