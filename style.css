@@ -16,7 +16,7 @@ body {
 
 .Todo-app {
   width: 80%;
-  max-width: 900px;
+  max-width: 100%;
   background-color: rgb(221, 212, 212);
   padding: 24px 20px;
   border-radius: 10px;
