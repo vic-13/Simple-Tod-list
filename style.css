@@ -16,8 +16,7 @@ body {
 }
 
 .Todo-app {
-  width: 100%;
-  max-width: 100%;
+  width: 70%;
   background-color: rgb(221, 212, 212);
   padding: 24px 20px;
   border-radius: 10px;
@@ -40,20 +39,21 @@ h1 {
 }
 
 .Todo-entry {
-  width: 100%;
   display: flex;
+  width: 100%;
 }
 
 .Todo-Input {
   padding: 10px 30px;
-  flex: 1;
+  flex: 0.8;
+  min-width: 30px;
   border-radius: 5px 0px 0px 5px;
   outline: none;
   border: 1px solid #e0e0e0;
 }
 
 .btn-save {
-  flex: 0 0 auto;
+  flex: 0.2;
   border-radius: 0px 5px 5px 0px;
   padding: 10px 30px;
   border: 1px solid #e0e0e0;
@@ -122,13 +122,17 @@ h1 {
     font-size: 50px;
   }
 }
+
+@media screen and (max-width: 591px) {
+  h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 463px) {
   h1 {
     font-size: 40px;
+    text-align: center;
   }
 }
-/* @media screen and (max-width: 612px) {
-  h1 {
-    font-size: 50px;
-  }
-} */
